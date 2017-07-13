@@ -58,7 +58,9 @@ const ButtonLink = styled.a`
   background-color: ${ props => props.theme.bg };
 `
 
-const SearchBox = styled.input`
+const SearchBox = styled.input.attrs({
+  placeholder: 'search'
+})`
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
